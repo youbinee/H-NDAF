@@ -1,0 +1,41 @@
+{
+        "data": {
+                "filename": "dataset.csv",
+                "columns" : [
+			"movingSpeed",
+			"compassDirection",
+                        "Throughput"
+                ],
+                "sequence_length" : 50,
+                "train_test_split" : 0.85,
+                "normalise" : true
+        },
+        "training" : {
+                "epochs" : 500,
+                "batch_size" : 32
+        },
+	"model" : {
+		"loss" : "mse",
+		"optimizer": "adam",
+		"save_dir": "saved_models",
+		"layers" : [
+                        {
+                                "type" : "lstm",
+                                "neurons" : 32,
+                                "input_timesteps" : 50,
+                                "input_dim" : 3,
+                                "return_seq" : true
+                        },
+                        {
+                                "type" : "lstm",
+                                "neurons" : 64,
+                                "return_seq" : false
+                        },
+			{
+                                "type" : "dense",
+                                "neurons" : 1,
+                                "activation" : "linear"
+			}
+		]
+	}
+}
