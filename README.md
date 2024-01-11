@@ -8,9 +8,9 @@ We implement H-NDAF using free5GC which is a well-known open-source software for
 ## Requirements
 We recommend the following specifications.
 
-1. Free5GC open-source [Link](https://www.free5gc.org/, "Free5GC")
-2. Python 3.5.x  [Link](https://www.python.org/, "Python")
-3. TensorFlow 1.10.0 [Link](https://www.tensorflow.org/, "Tensorflow")
+1. Free5GC open-source [Link](https://www.free5gc.org/)
+2. Python 3.5.x  [Link](https://www.python.org/)
+3. TensorFlow 1.10.0 [Link](https://www.tensorflow.org/)
 
 H-NDAF works based on the open-source free5GC.
 Therefore, the codes should be used after installing the basics of free5GC.
