@@ -37,11 +37,15 @@ python leaf_learning.py
 We describe a use case of how PCF in H-NDAF exploits the analytics on the UE downlink throughput prediction (i.e., the analytics on how the achievable data rate of UE changes) to optimize the policy for UE data flows.
 
 H-NDAF can proceed with various additional use cases for analytics in PCF.
+
 1. Checking Voice Call Bandwidth
+
 when a UE initiates a voice call (e.g., VoLTE, VoWiFi), PCF can request UE bandwidth prediction information from leaf NWDAF. The root NWDAF generates a bandwidth prediction model using information such as UE bandwidth, UE mobility, and serving cell information (e.g., signal strength, signal-to-noise ratio). PCF allocates additional bandwidth required for the UE using the analytics information. This ensures meeting the bandwidth requirements while maintaining the voice call quality for the UE.
 
 2. Selecting RAN (LTE/NR/WiFi)
+
 PCF can request analytics on UE's location information and network status. The root NWDAF generates a UE mobility and network status analytics model using information such as UE location and RAN status. PCF utilizes the analytics information to choose a specific RAN (e.g., LTE, WiFi) and sets policies accordingly.
 
 3. Setting Traffic Distribution Ratio
+
 PCF requests a model to analyze the current traffic situation of LTE and NR. The root NWDAF creates a model based on the traffic data of LTE/NR and communicates it to the leaf NWDAF. PCF uses that analytics to determine how congested the RAN is currently and how bandwidth is distributed. This allows PCF to decide how to allocate voice call traffic. For example, if LTE is congested, it can be adjusted to allocate more traffic to NR.
