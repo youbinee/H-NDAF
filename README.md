@@ -40,7 +40,7 @@ H-NDAF can proceed with various additional use cases for analytics in PCF.
 
 **1. Checking Voice Call Bandwidth**
 
-when a UE initiates a voice call (e.g., VoLTE, VoWiFi), PCF can request UE bandwidth prediction information from leaf NWDAF. The root NWDAF generates a bandwidth prediction model using information such as UE bandwidth, UE mobility, and serving cell information (e.g., signal strength, signal-to-noise ratio). PCF allocates additional bandwidth required for the UE using the analytics information. This ensures meeting the bandwidth requirements while maintaining the voice call quality for the UE.
+When a UE initiates a voice call (e.g., VoLTE, VoWiFi), PCF can request UE bandwidth prediction information from leaf NWDAF. The root NWDAF generates a bandwidth prediction model using information such as UE bandwidth, UE mobility, and serving cell information (e.g., signal strength, signal-to-noise ratio). PCF allocates additional bandwidth required for the UE using the analytics information. This ensures meeting the bandwidth requirements while maintaining the voice call quality for the UE.
 
 **2. Selecting RAN (LTE/NR/WiFi)**
 
