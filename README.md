@@ -48,4 +48,4 @@ PCF can request analytics on UE network status. The root NWDAF generates a UE ne
 
 **3. Setting Traffic Distribution Ratio**
 
-PCF requests a model to analyze the current traffic situation of LTE and NR. The root NWDAF creates a model based on the traffic data of LTE/NR and communicates it to the leaf NWDAF. PCF uses that analytics to determine how congested RAN is currently and how bandwidth is distributed. This allows PCF to decide how to allocate voice call traffic. For example, if LTE is congested, it can be adjusted to allocate more traffic to NR.
+PCF requests a model to analyze the current network traffic situation of LTE and NR. The root NWDAF creates a model based on the traffic data of LTE/NR and communicates it to the leaf NWDAF. PCF uses that analytics to determine how congested RAN is currently and how bandwidth is distributed. This allows PCF to decide how to allocate voice call traffic. For example, if LTE is congested, it can be adjusted to allocate more traffic to NR.
